@@ -1,0 +1,136 @@
+:root {
+  --black: #0f0d0e;
+  --white: #f9f4de;
+  --blue: #6dd5ed;
+  --purple: #5f00b7;
+  --pink: #f600b7;
+  --orange: #ff7243;
+  --yellow: #f9f871;
+  --green: #8cf6af;
+  --space: 2rem;
+  --space-2x: 4rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 800px;
+  margin: var(--space-2x) var(--space) calc(var(--space) + 1rem) var(--space);
+}
+
+footer {
+  max-width: 400px;
+  margin-bottom: calc(var(--space) - 1rem);
+  font-weight: 800;
+}
+
+.jm {
+  display: block;
+  height: auto;
+  width: 70vw;
+  max-width: 375px;
+  margin: auto;
+  margin-bottom: var(--space);
+  border-radius: 50%;
+}
+
+.name {
+  margin: auto;
+  margin-bottom: 1rem;
+  color: var(--yellow);
+  font-family: "Paytone One", sans-serif;
+  font-size: 4rem;
+}
+
+.oneliner {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.role {
+  margin: var(--space) auto;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 400px;
+  margin: var(--space) auto;
+  font-size: 3rem;
+}
+
+.description {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  padding: calc(var(--space) + 1rem);
+  font-size: 1.25rem;
+}
+
+.description-border {
+  position: absolute;
+  overflow: visible;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: url(#grad);
+  stroke-width: 5px;
+}
+
+#grad stop:nth-child(1) {
+  stop-color: var(--purple);
+}
+
+#grad stop:nth-child(2) {
+  stop-color: var(--yellow);
+}
+
+.fa-button {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.fa-button:focus,
+.fa-button:hover,
+.fa-button:active {
+  color: var(--pink);
+}
+
+.link {
+  padding: 1.5px;
+}
+
+.link:link {
+  color: var(--yellow);
+}
+
+.link:visited {
+  color: var(--orange);
+}
+
+.link:focus,
+.link:hover,
+.link:active {
+  margin: 1rem auto;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-bottom: 1px solid;
+  border-radius: 5px;
+}
