@@ -4,5 +4,9 @@
 			"path": "."
 		}
     ],
-    "settings": {}
+    "settings": {
+        "liveServer.settings.root": "/www",
+        "liveServer.settings.port": 3000,
+        "liveServer.settings.CustomBrowser": "chrome:PrivateMode"
+    }
 }
