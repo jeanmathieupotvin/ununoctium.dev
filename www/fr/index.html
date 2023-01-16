@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jean-Mathieu Potvin</title>
+    <meta charset="utf-8" />
+    <base href="" target="_self" />
+
+    <!-- Metadata -->
+    <meta name="author" content="Jean-Mathieu Potvin" />
+    <meta
+      name="description"
+      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+    />
+    <meta
+      name="keywords"
+      content="ingénierie logiciel, développeur, consultant, professionnel, jmp, jean, mathieu, potvin, jean-mathieu"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="potvin.xyz" />
+    <meta
+      itemprop="description"
+      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+    />
+    <meta
+      itemprop="image"
+      content="https://cdn.potvin.xyz/images/me-375px.jpg"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Jean-Mathieu Potvin | Ununoctium" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://potvin.xyz" />
+    <meta
+      property="og:image"
+      content="https://cdn.potvin.xyz/images/me-375px.jpg"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:alt"
+      content="Image de profil de Jean-Mathieu Potvin"
+    />
+    <meta property="og:image:width" content="670" />
+    <meta property="og:image:height" content="669" />
+    <meta
+      property="og:description"
+      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+    />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="potvin.xyz" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jean-Mathieu Potvin | Ununoctium" />
+    <meta
+      name="twitter:description"
+      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.potvin.xyz/images/me-375px.jpg"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap"
+    />
+    <link rel="stylesheet" media="all" href="/css/normalize.css" />
+    <link rel="stylesheet" media="all" href="/css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2202465621.js"
+      crossorigin
+    ></script>
+    <script src="/js/index.js"></script>
+  </head>
+  <body lang="fr-CA">
+    <main>
+      <!-- Language switch -->
+      <!-- Credit: https://codepen.io/TorabRamin/pen/mqrBBj -->
+      <div class="switch">
+        <input
+          id="language"
+          class="toggle toggle-round"
+          type="checkbox"
+          oninput="toggleLanguage()"
+          checked
+        />
+        <label for="language"></label>
+        <span class="on" title="English">EN</span>
+        <span class="off" title="Français (Canada)">FR</span>
+      </div>
+
+      <img
+        class="jm"
+        src="https://cdn.potvin.xyz/images/me-375px.jpg"
+        alt="Image de profil de Jean-Mathieu"
+        width="375"
+        height="375"
+      />
+
+      <!-- Titles -->
+      <h1 class="name">Jean-Mathieu Potvin</h1>
+      <h2 class="oneliner">
+        Compilateur humain optimisé pour
+        <span style="color: var(--blue)">l'ère moderne</span>.
+      </h2>
+
+      <!-- Contact buttons -->
+      <div class="social">
+        <a
+          class="fa-button"
+          href="mailto:jm@potvin.xyz"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          class="fa-button"
+          href="https://www.aqiii.org/fr/membres/repertoire/25043"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-solid fa-hashtag"></i>
+        </a>
+        <a
+          class="fa-button"
+          href="https://orcid.org/0000-0002-8237-422X"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+        <a
+          class="fa-button"
+          href="https://www.linkedin.com/in/jeanmathieupotvin-dev"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          class="fa-button"
+          href="https://github.com/jeanmathieupotvin"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <!-- Role -->
+      <p class="role">
+        Professionnel de l'ingénierie logiciel,
+        <br />
+        développeur et consultant
+        <br />
+        <i
+          class="fa-solid fa-at"
+          style="margin: 1rem auto; color: var(--blue)"
+        ></i>
+        <br />
+        <span style="color: var(--blue)">Ununoctium</span>
+      </p>
+
+      <!-- Description box -->
+      <svg width="0" height="0">
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" />
+          <stop offset="1" />
+        </linearGradient>
+        <symbol id="description-border" overflow="visible">
+          <rect width="100%" height="100%" rx="16px" ry="10px" />
+        </symbol>
+      </svg>
+
+      <div class="description">
+        <svg class="description-border"><use href="#description-border" /></svg>
+        <p>
+          Bonjour! Je suis Jean-Mathieu, un passionné d'informatique, de
+          sciences et de sujets geeks. Je me suis longtemps défini comme étant
+          un statisticien, un scientifique de données et un spécialiste de
+          l'assurance inondation. Maintenant, je ne suis obsédé que par deux
+          choses : écrire des programmes élégants et devenir un meilleur
+          professionnel de l'ingénierie logiciel.
+        </p>
+        <p>
+          Pardonnez la poussière. Je reconstruis actuellement ce site avec
+          <span style="color: var(--green)">Astro</span>.
+        </p>
+      </div>
+    </main>
+
+    <!-- Copyright -->
+    <footer>
+      <p>
+        <i class="far fa-copyright"></i>
+        Jean-Mathieu Potvin (2022).
+        <br />
+        Tous droits réservés.
+        <br />
+        Fait partie de la famille
+        <a class="link" href="/" target="_self">potvin.xyz</a>.
+      </p>
+    </footer>
+  </body>
+</html>
