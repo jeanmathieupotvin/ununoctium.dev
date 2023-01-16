@@ -9,7 +9,7 @@
     <meta name="author" content="Jean-Mathieu Potvin" />
     <meta
       name="description"
-      content="The personal website of Jean-Mathieu Potvin"
+      content="The website of Jean-Mathieu Potvin and Ununoctium."
     />
     <meta
       name="keywords"
@@ -22,7 +22,7 @@
     <meta itemprop="name" content="potvin.xyz" />
     <meta
       itemprop="description"
-      content="The website of Jean-Mathieu Potvin and Ununoctium"
+      content="The website of Jean-Mathieu Potvin and Ununoctium."
     />
     <meta
       itemprop="image"
@@ -46,7 +46,7 @@
     <meta property="og:image:height" content="669" />
     <meta
       property="og:description"
-      content="The website of Jean-Mathieu Potvin and Ununoctium"
+      content="The website of Jean-Mathieu Potvin and Ununoctium."
     />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="potvin.xyz" />
@@ -56,7 +56,7 @@
     <meta name="twitter:title" content="Jean-Mathieu Potvin | Ununoctium" />
     <meta
       name="twitter:description"
-      content="The website of Jean-Mathieu Potvin and Ununoctium"
+      content="The website of Jean-Mathieu Potvin and Ununoctium."
     />
     <meta
       name="twitter:image"
@@ -74,24 +74,30 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap"
     />
-    <link rel="stylesheet" media="all" href="/styles/normalize.css" />
-    <link rel="stylesheet" media="all" href="/styles/main.css" />
+    <link rel="stylesheet" media="all" href="/css/normalize.css" />
+    <link rel="stylesheet" media="all" href="/css/main.css" />
 
-    <!-- FontAwesome -->
+    <script src="/js/index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/2202465621.js"
       crossorigin
     ></script>
   </head>
-  <body lang="en">
+  <body lang="en-CA">
     <main>
       <!-- Language switch -->
       <!-- Credit: https://codepen.io/TorabRamin/pen/mqrBBj -->
       <div class="switch">
-        <input id="language" class="toggle toggle-round" type="checkbox" />
+        <input
+          id="language"
+          class="toggle toggle-round"
+          type="checkbox"
+          oninput="toggleLanguage()"
+          unchecked
+        />
         <label for="language"></label>
-        <span class="on">EN</span>
-        <span class="off">FR</span>
+        <span class="on" title="English">EN</span>
+        <span class="off" title="Français (Canada)">FR</span>
       </div>
 
       <img
@@ -155,14 +161,16 @@
 
       <!-- Role -->
       <p class="role">
-        Software engineer, Developer, and Consultant
+        Software engineering professional,
+        <br />
+        developer, and consultant
         <br />
         <i
           class="fa-solid fa-at"
           style="margin: 1rem auto; color: var(--blue)"
         ></i>
         <br />
-        <span style="color: var(--blue)">Ununoctium</span>, coding simplified
+        <span style="color: var(--blue)">Ununoctium</span>
       </p>
 
       <!-- Description box -->
@@ -183,7 +191,7 @@
           computers, geeky, and nerdy topics. I used to be a statistician, a
           data scientist, and a flood insurance specialist. Nowadays, I am
           obsessed with only two things: writing beautiful code and becoming a
-          better software developer.
+          better software engineering professional.
         </p>
         <p>
           Pardon the dust. I am rebuilding this website with
