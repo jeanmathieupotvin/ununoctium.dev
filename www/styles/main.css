@@ -26,7 +26,7 @@ body {
 
 main {
   max-width: 800px;
-  margin: var(--space-2x) var(--space) calc(var(--space) + 1rem) var(--space);
+  margin: var(--space-2x) var(--space) var(--space) var(--space);
 }
 
 footer {
@@ -133,4 +133,90 @@ footer {
   color: var(--black);
   border-bottom: 1px solid;
   border-radius: 5px;
+}
+
+/* Styles for language switch */
+/* Credit: https://codepen.io/TorabRamin/pen/mqrBBj */
+
+.switch {
+  display: inline-block;
+  position: relative;
+  margin-bottom: var(--space);
+}
+
+.switch > span {
+  position: absolute;
+  top: 10px;
+  width: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: var(--white);
+}
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: var(--white);
+}
+
+.toggle {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -9999px;
+}
+.toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+#language.toggle-round:not(:checked) ~ .off {
+  color: var(--black);
+}
+
+#language.toggle-round:checked ~ .on {
+  color: var(--black);
+}
+
+#language.toggle-round + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: var(--yellow);
+  border-radius: 60px;
+}
+#language.toggle-round + label:before,
+#language.toggle-round + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+#language.toggle-round + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--yellow);
+  border-radius: 60px;
+}
+#language.toggle-round + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: var(--purple);
+  border-radius: 52px;
+  transition: margin 0.2s;
+}
+#language.toggle-round:checked + label:after {
+  margin-left: 44px;
 }
