@@ -7,6 +7,7 @@
   --orange: #ff7243;
   --yellow: #f9f871;
   --green: #8cf6af;
+  --base-size: 16px;
   --space: 2rem;
   --space-2x: 4rem;
 }
@@ -21,7 +22,7 @@ body {
   color: var(--white);
   text-align: center;
   font-family: "Outfit", sans-serif;
-  font-size: 16px;
+  font-size: var(--base-size);
 }
 
 main {
