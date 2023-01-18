@@ -63,12 +63,29 @@
       name="twitter:image"
       content="https://cdn.potvin.xyz/images/me-375px.jpg"
     />
+
+    <!-- Styling -->
+    <!-- External stylesheets are not loaded for efficiency. -->
+    <style>
+      :root {
+        --black: #0f0d0e;
+        --white: #f9f4de;
+        --yellow: #f9f871;
+      }
+      body {
+        background-color: var(--black);
+        color: var(--white);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
   </head>
   <body lang="en">
     <main>
       <p>
-        Automatic redirections are disabled. Please follow this link to the
-        <a href="/en">English landing page</a>.
+        Automatic redirections are <strong>disabled</strong>. Please choose
+        a preferred language:
+        <a href="/en" style="color: var(--yellow)">English</a> or
+        <a href="/fr" style="color: var(--yellow)">French</a>.
       </p>
     </main>
   </body>
