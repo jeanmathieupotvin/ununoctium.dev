@@ -9,44 +9,35 @@
     <meta name="author" content="Jean-Mathieu Potvin" />
     <meta
       name="description"
-      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+      content="Le site web d'Ununoctium, l'entreprise individuelle de Jean-Mathieu Potvin."
     />
     <meta
       name="keywords"
-      content="ingénierie logiciel, développeur, consultant, professionnel, jmp, jean, mathieu, potvin, jean-mathieu"
+      content="ingénierie logicielle, développeur, consultant, professionnel, jmp, jean, mathieu, potvin, jean-mathieu"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#5f00fb" />
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="ununoctium.dev" />
     <meta
       itemprop="description"
-      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+      content="Le site web d'Ununoctium, l'entreprise individuelle de Jean-Mathieu Potvin."
     />
-    <meta
-      itemprop="image"
-      content="https://cdn.ununoctium.dev/images/me-375px.jpg"
-    />
+    <meta itemprop="image" content="/public/images/me-375px.jpg" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Jean-Mathieu Potvin | Ununoctium" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ununoctium.dev" />
-    <meta
-      property="og:image"
-      content="https://cdn.ununoctium.dev/images/me-375px.jpg"
-    />
+    <meta property="og:image" content="/public/images/me-375px.jpg" />
     <meta property="og:image:type" content="image/png" />
-    <meta
-      property="og:image:alt"
-      content="Image de profil de Jean-Mathieu Potvin"
-    />
-    <meta property="og:image:width" content="670" />
-    <meta property="og:image:height" content="669" />
+    <meta property="og:image:alt" content="Image de Jean-Mathieu Potvin" />
+    <meta property="og:image:width" content="375" />
+    <meta property="og:image:height" content="375" />
     <meta
       property="og:description"
-      content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
+      content="Le site web d'Ununoctium, l'entreprise individuelle de Jean-Mathieu Potvin."
     />
     <meta property="og:locale" content="en_CA" />
     <meta property="og:site_name" content="ununoctium.dev" />
@@ -58,10 +49,7 @@
       name="twitter:description"
       content="Le site web de Jean-Mathieu Potvin et d'Ununoctium."
     />
-    <meta
-      name="twitter:image"
-      content="https://cdn.ununoctium.dev/images/me-375px.jpg"
-    />
+    <meta name="twitter:image" content="/public/images/me-375px.jpg" />
 
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,6 +72,15 @@
     <script src="/js/index.js"></script>
   </head>
   <body lang="fr-CA">
+    <!-- Ununoctium logo -->
+    <img
+      class="img-uuo"
+      src="/public/images/logo-ununoctium.png"
+      alt="Ununoctium's logo"
+      width="739"
+      height="738"
+    />
+
     <main>
       <!-- Language switch -->
       <!-- Credit: https://codepen.io/TorabRamin/pen/mqrBBj -->
@@ -101,15 +98,15 @@
       </div>
 
       <img
-        class="jm"
-        src="https://cdn.ununoctium.dev/images/me-375px.jpg"
-        alt="Image de profil de Jean-Mathieu"
+        class="img-jm"
+        src="/public/images/me-375px.jpg"
+        alt="Image de Jean-Mathieu Potvin"
         width="375"
         height="375"
       />
 
       <!-- Titles -->
-      <h1 class="name">Jean-Mathieu Potvin, M. Sc.</h1>
+      <h1 class="name">Jean-Mathieu Potvin, M.Sc.</h1>
       <h2 class="oneliner">
         Compilateur humain optimisé pour
         <span style="color: var(--blue)">l'ère moderne</span>.
@@ -161,14 +158,14 @@
 
       <!-- Role -->
       <p class="role">
-        Concepteur logiciel et consultant
+        Concepteur logiciel, consultant
         <br />
         <i
           class="fa-solid fa-at"
           style="margin: 1rem auto; color: var(--blue)"
         ></i>
         <br />
-        <span style="color: var(--blue)">Ununoctium</span>
+        <span style="color: var(--blue)">Ununoctium, le code simplifié</span>
       </p>
 
       <!-- Description box -->
@@ -185,11 +182,12 @@
       <div class="description">
         <svg class="description-border"><use href="#description-border" /></svg>
         <p>
-          Bonjour! Je suis Jean-Mathieu, un passionné d'informatique, de science et 
-          de sujets geeks. Je me suis longtemps défini comme étant un statisticien, 
-          un scientifique de données et un spécialiste de l'assurance inondation. 
-          Maintenant, je ne suis obsédé que par deux choses : écrire des programmes 
-          élégants et devenir un meilleur concepteur logiciel.
+          Bonjour! Je suis Jean-Mathieu, un passionné d'informatique, de science
+          et de sujets geeks. Je me suis longtemps défini comme étant un
+          statisticien, un scientifique de données et un spécialiste de
+          l'assurance inondation. Maintenant, je ne suis obsédé que par deux
+          choses : écrire des programmes élégants et devenir un meilleur
+          concepteur logiciel.
         </p>
       </div>
     </main>
@@ -198,7 +196,7 @@
     <footer>
       <p>
         <i class="far fa-copyright"></i>
-        Jean-Mathieu Potvin (2023).
+        Jean-Mathieu Potvin (<span id="year"></span>).
         <br />
         Tous droits réservés.
         <br />
@@ -206,5 +204,8 @@
         <a class="link" href="/" target="_self">ununoctium.dev</a>.
       </p>
     </footer>
+    <script>
+      renderCurrentYear();
+    </script>
   </body>
 </html>

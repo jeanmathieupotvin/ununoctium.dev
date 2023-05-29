@@ -2,7 +2,7 @@
   --black: #0f0d0e;
   --white: #f9f4de;
   --blue: #6dd5ed;
-  --purple: #5f00b7;
+  --purple: #5f00fb;
   --pink: #f600b7;
   --orange: #ff7243;
   --yellow: #f9f871;
@@ -36,7 +36,7 @@ footer {
   font-weight: 800;
 }
 
-.jm {
+.img-jm {
   display: block;
   height: auto;
   width: 70vw;
@@ -44,6 +44,13 @@ footer {
   margin: auto;
   margin-bottom: var(--space);
   border-radius: 50%;
+}
+
+.img-uuo {
+  height: auto;
+  position: fixed;
+  right: -250px;
+  bottom: -250px;
 }
 
 .name {
@@ -220,4 +227,10 @@ footer {
 }
 #language.toggle-round:checked + label:after {
   margin-left: 44px;
+}
+
+@media screen and (max-width: 1600px) {
+  .img-uuo {
+    display: none;
+  }
 }
