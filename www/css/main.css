@@ -7,6 +7,8 @@
   --orange: #ff7243;
   --yellow: #f9f871;
   --green: #8cf6af;
+  --gs-green: #8db300;
+  --gs-blue: #27286e;
   --base-size: 16px;
   --space: 2rem;
   --space-2x: 4rem;
@@ -67,12 +69,6 @@ footer {
   font-weight: 800;
 }
 
-.role {
-  margin: var(--space) auto;
-  font-size: 2rem;
-  font-weight: 800;
-}
-
 .social {
   display: flex;
   align-items: center;
@@ -80,6 +76,16 @@ footer {
   max-width: 400px;
   margin: var(--space) auto;
   font-size: 3rem;
+}
+
+.role {
+  margin: var(--space) auto;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.role-inner-space {
+  margin: var(--space) 0 auto auto;
 }
 
 .description {
@@ -108,6 +114,24 @@ footer {
 
 #grad stop:nth-child(2) {
   stop-color: var(--yellow);
+}
+
+.gs-button {
+  padding: 0 5px;
+  background-color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--gs-blue);
+}
+
+.gs-button:focus,
+.gs-button:hover,
+.gs-button:active,
+.gs-button:focus span,
+.gs-button:hover span,
+.gs-button:active span {
+  color: var(--white) !important;
+  background-color: var(--pink);
 }
 
 .fa-button {
